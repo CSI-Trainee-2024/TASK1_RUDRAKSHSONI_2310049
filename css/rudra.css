@@ -67,6 +67,13 @@ a{
 header{
 padding: 1rem 0;
     background: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6; 
+   width: 100%;
+   /* height: 100%; */
+
 }
 .logo img{
     width: 50%;
@@ -105,4 +112,75 @@ transition: all 0.3s ease-in;
 nav ul li:hover::before{
     opacity: 1;
     width: 100%;
+}
+main{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.swiper{
+    height: 100vh;
+}
+ .slide-container{
+    width: 100%;
+}
+.slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ } 
+.img-overlay{
+    position:absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-family: "ubuntu";
+    transform: translate(-50%,-50%);
+}
+.img-overlay p {
+    font-size: 1rem;
+    letter-spacing: 8px;
+    color: var(--white-color);
+    animation: animate 4s forwards;
+}
+.img-overlay h2{
+    font-size: 5rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    animation: animate 4s forwards;
+    transition: all 0.5s ease-in-out;
+} 
+.overlay{
+    position: relative;
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-0%);
+    }
 }
