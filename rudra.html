@@ -6,6 +6,7 @@
     <title>Welcome to Ramore</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css/rudra.css">
+   <link rel="stylesheet" href="css/responsive.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -18,8 +19,11 @@
             <nav>
                 <div class="logo">
                     <img src="images\resized_logo_for_navbar.png" alt="logo">
+                </div><ul>
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
                 </div>
-                <ul>
+                
            <li><a href="#">Home</a></li> 
            <li><a href="#">About</a></li> 
            <li><a href="#">Tour</a></li> 
@@ -27,6 +31,9 @@
            <li><a href="#">Gallery</a></li> 
            <li><a href="#">Contact</a></li> 
             </ul>
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
         </nav>
         </div>
        
@@ -54,15 +61,41 @@
                         <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.webp?a=1&b=1&s=612x612&w=0&k=20&c=KvQq5YpYZepJmWkDa1R3MeQb2Xrd5tLjpoS9kvIf4GY=" alt="/">
                         <div class="img-overlay">
                     <p>Let's Travel the world with us.</p>
-                    <h2><span>Discover</span>The World.</h2>
-                    <h2>With Our Guide.</h2>
+                    <h2>Discover The World.</h2>
+                    <h2>With Our <span>Ramore.</span></h2>
                     </div>
                 </div>
 
             </div>
         </div>
     </main>
+    <section id="location-search">
+<div class="container">
+    <div class="form-wrapper">
+        <form action="#">
+            <input type="text" placeholder="Where to?" class="form-control"/>
+            <select class="form-control">
+                <option value="Destination">Destination</option>
+                <option value="Destination">Agra</option>
+                <option value="Destination">Jaipur</option>
+                <option value="Destination">Udaipur</option>
+                <option value="Destination">Maldives</option>
+                <option value="Destination">Mathura</option>
+            </select>
+            <select class="form-control">
+                <option value="duration ">Duration</option>
+                <option value="day-1"> 1 day Tour</option>
+                <option value="2-4 Days">2-4 Days Tour</option>
+                <option value="5-7 Days">5-7 Days Tour</option>
+                <option value="7+ Days">7+ Days</option>
+            </select>
+            <button type="button" class="primary-btn">Search Now</button>
+        </form>
+    </div>
+</div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script src="js/swiper.js"></script>
+     <script src="js/rudra.js"></script>
 </body>
 </html>
