@@ -9,3 +9,10 @@ menubtn.addEventListener("click",
     closeBtn.addEventListener("click",()=>{
         menus.classList.remove("display");
     })
+window.addEventListener("scroll",()=>{
+    if(document.documentElement.scrollTop > 20){
+        header.classList.add("sticky");
+    }else{
+        header.classList.remove("sticky");
+    }
+})
