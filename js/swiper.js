@@ -20,3 +20,32 @@ const swiper = new Swiper(".swiper",{
 
 }
 )
+const swiper2 = new Swiper(".swiper2",{
+    slidesPerView : 3,
+    spaceBetween: 35,
+    slidesPerGroup : 1,
+    loop: true,
+    fade : true,
+    centerSlide:true,
+    grabCursor : true,
+    LoopfillGroupwithBlank : true,
+    autoplay : {
+        delay : 5000,
+    },
+    speed : 400,
+   breakpoints :{
+    320:{
+        slidesPerView:1,
+    },
+    768:{
+        slidesPerView:2,
+    },
+    968:{
+        slidesPerView:3,
+    }
+
+   }
+
+
+}
+)
